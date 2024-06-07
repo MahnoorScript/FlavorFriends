@@ -1,0 +1,104 @@
+.dashboard-container {
+  background-color: #1f2937;
+  padding: 12px;
+}
+
+.dashboard-content {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.dashboard-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #d1d5db;
+  margin-bottom: 16px;
+}
+
+.hello-user {
+  font-size: 2rem;
+  color: #d1d5db;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.post-item {
+  margin-top: 10px;
+  background: #1a202c;
+  padding: 15px;
+  border-radius: 10px;
+  color: #d1d5db;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Adding transition for background-color and transform */
+}
+
+.post-item:hover {
+  background-color: #374151; /* Changing background color on hover */
+  transform: scale(1.08); /* Scaling up the post item on hover */
+}
+
+
+
+.post-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.post-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.post-description {
+  color: #d1d5db;
+  margin-top: 10px;
+}
+
+.post-author {
+  color: #9ca3af;
+  margin-top: 5px;
+  font-size: 0.875rem;
+}
+
+.post-read-more {
+  color: #8bb7ff;
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+
+.no-posts {
+  color: #d1d5db;
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dashboard-content {
+    padding: 0;
+  }
+
+  .posts-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .dashboard-title {
+    font-size: 2rem;
+  }
+
+  .hello-user {
+    font-size: 0.9rem;
+  }
+}

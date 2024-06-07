@@ -1,0 +1,180 @@
+.dashboard-container {
+  background-color: #1f2937;
+  padding: 12px;
+}
+
+.post-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.dashboard-content {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.dashboard-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #d1d5db;
+  margin-bottom: 16px;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+
+.feed-post-item {
+  margin-top: 10px;
+  background: #1a202c;
+  padding: 15px;
+  border-radius: 10px;
+  color: #d1d5db;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Adding transition for background-color and transform */
+}
+
+.feed-post-item:hover {
+  background-color: #374151; /* Changing background color on hover */
+  transform: scale(1.08); /* Scaling up the post item on hover */
+}
+
+
+.single-post-item {
+  margin-top: 10px;
+  background: #1a202c;
+  padding: 15px;
+  border-radius: 10px;
+  color: #d1d5db;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Adding transition for background-color and transform */
+}
+
+
+
+.post-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.feed-post-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 0px;
+}
+
+.single-post-image {
+  width: 70%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 0px;
+}
+
+.post-description {
+  color: #d1d5db; 
+  margin-top: 10px;
+}
+
+.post-author {
+  color: #9ca3af;
+  margin-top: 5px;
+  font-size: 0.875rem;
+}
+
+.post-read-more {
+  color: #8bb7ff;
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.no-posts {
+  color: #d1d5db;
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .dashboard-content {
+    padding: 0;
+  }
+
+  .posts-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .dashboard-title {
+    font-size: 2rem;
+  }
+}
+
+.follow-button {
+  color: #000000; /* Text color - you can set this to what you prefer */
+  background-color: #F8F8FF; /* Off-white background color */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  padding: 3px 10px; /* Add some padding */
+  border-radius: 4px; /* Optional: Rounds the corners of the button */
+  text-decoration: none; /* Optional: Removes underline from links if it's an <a> element */
+}
+
+.follow-button:hover {
+  background-color: #797a8e; /* Grey background color on hover */
+  transition: background-color 0.3s ease;
+}
+
+.success-message {
+  color: green;
+  /* Add more styling as needed */
+}
+
+/* You might have this already from the grid view, reuse it */
+.post-item {
+  background: #1a202c;
+  padding: 15px;
+  border-radius: 10px;
+  color: #d1d5db;
+  transition: background-color 0.3s ease; /* Adding transition for smoother effect */
+}
+
+/* Reuse this for the post titles */
+.post-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+/* Reuse this for the post images */
+.post-image {
+  width: 100%;
+  height: auto; /* Change to auto for aspect ratio */
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Reuse this for the post description */
+.post-description {
+  color: #d1d5db; 
+  margin-top: 10px;
+}
+
+/* Already used for post author details, repurpose it for other author details as well */
+.post-author {
+  color: #9ca3af;
+  margin-top: 5px;
+  font-size: 0.875rem;
+}
+
+/* Add this for your success message */
+.success-message {
+  color: green;
+  /* Additional styling here if needed */
+}

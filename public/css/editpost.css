@@ -1,0 +1,93 @@
+.button-shared {
+    display: inline-block;
+    padding: 8px 16px; /* You can adjust padding as needed */
+    text-align: center;
+    font-size: 16px; /* You can adjust font size as needed */
+    border-radius: 4px; /* You can adjust border-radius as needed */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.edit-button {
+    background-color: #f3f4f6; /* Light gray background */
+    color: #374151; /* Dark gray text */
+    border: 1px solid #d1d5db; /* Light gray border */
+    margin-right: 8px; /* Adds a 8px gap between the buttons */
+}
+.edit-button:hover {
+    background-color: #a5a7aa; /* Darker gray on hover */
+}
+
+.delete-button {
+    background-color: #b91c1c; /* Red background */
+    color: white; /* White text */
+    border: 1px solid transparent; /* Transparent border */
+}
+
+.delete-button:hover {
+    background-color: #701010; /* Darker red on hover */
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  
+  .post-item {
+    margin-top: 10px;
+    background: #1a202c;
+    padding: 15px;
+    border-radius: 10px;
+    color: #d1d5db;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adding transition for background-color and transform */
+  }
+  
+  .post-item:hover {
+    background-color: #374151; /* Changing background color on hover */
+    transform: scale(1.08); /* Scaling up the post item on hover */
+  }
+  
+  .post-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  
+  .post-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .post-description {
+    color: #d1d5db; 
+    margin-top: 10px;
+  }
+  
+  .post-author {
+    color: #9ca3af;
+    margin-top: 5px;
+    font-size: 0.875rem;
+  }
+  
+
+  .post-title {
+    font-size: 1.25rem; 
+    font-weight: bold; 
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-content {
+      padding: 0;
+    }
+  
+    .posts-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  
+    .dashboard-title {
+      font-size: 2rem;
+    }
+  }
